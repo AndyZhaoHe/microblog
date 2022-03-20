@@ -6,17 +6,24 @@
     <title>microblog</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
   </head>
   <body>
+    <header><h1>Microblog</h1></header>
     <main>
-      <img src="logo.png" alt="DFINITY logo" />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
+      <p style="margin-bottom: 200;">
+      <label for="followed" style="color: brown;">我的关注列表</label>
+      <section id="followed"></section>
+      <section id="follows_post"></section>
+     </p>
+
+     <p>
+      <label for="message">What do you want to post?</label>
+      <textarea id="message"></textarea>
+      <button id="post">Post</button>
+      <div for="posts" style="color :brown"> 我发布的内容</div>
+      <section id="posts"></section>
+    </p>
     </main>
   </body>
 </html>
